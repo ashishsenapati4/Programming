@@ -1,0 +1,4 @@
+DROP LOGIN NewUser;
+
+CREATE LOGIN [NewUser] WITH PASSWORD = 'NewUserStar@988';
+ALTER LOGIN [NewUser] WITH DEFAULT_DATABASE = [master];
