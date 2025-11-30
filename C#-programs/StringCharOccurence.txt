@@ -1,0 +1,22 @@
+//character occurence in a string
+using System;
+class HelloWorld {
+  static void Main() {
+      string str = "Ashish senapati";
+      int k = FindCharOccurence(str,'i');
+      Console.WriteLine(k+" ");
+  }
+  
+  public static int FindCharOccurence(string str, char ch)
+  {
+      int count = 0;
+      foreach(char c in str)
+      {
+          if(char.ToUpper(c) == char.ToUpper(ch))
+          {
+              count++;
+          }
+      }
+      return count;
+  }
+}
