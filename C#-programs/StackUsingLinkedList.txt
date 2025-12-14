@@ -1,0 +1,61 @@
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        StackOperations sop = new StackOperations();
+        sop.StackPush(5);
+        sop.StackPush(9);
+        sop.StackPush(7);
+        
+        sop.StackPop();
+        Node node = sop.StackPop();
+        Console.WriteLine("Printing elements in the stack");
+        while(node!= null)
+        {
+            Console.WriteLine(node.data+" ");
+            node = node.next;
+        }
+    }
+}
+
+public class Node
+{
+    public int data;
+    public Node next;
+    
+    public Node(int data)
+    {
+        this.data = data;
+    }
+}
+
+public class StackOperations
+{
+    private Node head;
+    
+    public Node StackPush(int data)
+    {
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+        return newNode;
+    }
+    
+    public Node StackPop()
+    {
+        if(head == null)
+        {
+            Console.WriteLine("No more element");
+        }
+        else
+        {
+            Node node = head;
+            head = head.next;
+            Console.WriteLine(node.data+" has been removed");
+        }
+        return head;
+    }
+}

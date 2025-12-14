@@ -1,0 +1,127 @@
+Rest Apis from Employee class
+.............................
+Employee.cs
+...........
+public class Employee
+{
+	public int EmployeeId {get; set;}
+	public string EmployeeName {get; set;}
+	
+}
+
+IEmployeeRepository.cs
+......................
+interface IEmployeeRepository
+{
+	Employee GetById(int id);
+	List<Employee> GetAllEmployees();
+	public Employee AddOrUpdate(Employee employee);
+	public Employee RemoveById(int id);
+}
+
+EmployeeRepository.cs
+.....................
+public class EmployeeRepository : IEmployeeRepository
+{
+	List<Employee> Emps = new List<Employee>();
+	public EmployeeRepository()
+	{
+		Employee e1 = new Employee{ EmployeeId=100, EmployeeName='Ashish'}
+		Employee e2 = new Employee{ EmployeeId=101, EmployeeName='Rima' }
+		Emps.Add(e1);
+		Emps.Add(e2);
+	}
+	
+	public Employee GetById(int id)
+	{
+		List<Employee> AllEmployee = GetAllEmployees();
+		return AllEmployee.Find(x => x.EmployeeId == id);
+	}
+	
+	public List<Employee> GetAllEmployees()
+	{
+		return Emps;
+	}
+	
+	public Employee AddOrUpdate(Employee employee)
+	{
+		Employee emp = GetById(employee.EmployeeId);
+		if(emp == null)
+		{
+			Emps.Add(employee);
+			return employee;
+		}
+		else
+		{
+			emp.EmployeeId = employee.EmployeeId;
+			emp.EmployeeName = employee.EmployeeName;
+			return emp;
+		}
+	}
+	
+	public Employee RemoveById(int id)
+	{
+		Employee emp = GetById(id);
+		if(emp != null)
+		{
+			Emps.Remove(emp)
+		}
+		return emp;
+	}
+}
+
+Program.cs
+..........
+app.services.AddSingleton<IEmployeeRepository,EmployeeRepository>();
+app.MapControllers();
+
+EmployeeController.cs
+.....................
+[ApiController]
+[Route("api/[controller]")]
+public class EmployeeController : ControllerBase
+{
+	private readonly IEmployeeRepository repo;
+
+	public EmployeeController(IEmployeeRepository _repository)
+	{
+		this.repo = _repository;
+	}
+	
+	[HttpGet("{id}")]
+	public IActionResult GetById(int id)
+	{
+		Employee emp = repo.GetById(id);
+		
+		if(emp == null)
+		{
+			return NotFound();
+		}
+		return Ok(emp);
+	}
+	
+	[HttpGet]
+	public IActionResult GetAllEmployees()
+	{
+		List<Employee> emps = repo.GetAllEmployees();
+		return Ok(emps);
+	}
+	
+	[HttpPost]
+	public IActionResult AddOrUpdate(Employee employee)
+	{
+		return Ok(repo.AddOrUpdate(employee));
+	}
+	
+	[HttpDelete("{id}")]
+	public IActionResult DeleteById(int id)
+	{
+		Employee emp = repo.GetById(id);
+		if(emp == null)
+		{
+			return NotFound();
+		}
+		return Ok(repo.RemoveById(id));
+	}
+	
+}

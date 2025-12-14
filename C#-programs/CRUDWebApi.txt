@@ -1,0 +1,70 @@
+Rest API for Add and Update
+............................
+
+Model
+.....
+public class Student
+{
+	public int sId{get; set;}
+	
+	public string sName(get; set;};
+	
+	public string sStandard{get; set};
+}
+
+MyDbContext
+...........
+public class MyDbContext : DbContext
+{
+	public MyDbContext()
+	{
+	
+	}
+	
+	public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
+	{
+	
+	}
+	
+	public virtual DbSet<Student> Students{get; set;}
+}
+
+Controller
+..........
+[ApiController]
+[Route("api/[controller]")]
+public class StudentController : Controller
+{
+	private readonly MyDbContext dbContext;
+	
+	public StudentController(MyDbContext _dbContext)
+	{
+		this.dbContext = _dbContext;
+	}
+	
+	//Action methos for Add or Update...
+	public async Task<ActionResult<Student>> AddOrUpdate(Student std)
+	{
+		if(std.sId == null || std.sId == 0)
+		{
+			await dbContext.Students.AddAsync(std);
+			await dbContext.SaveChangesAsync();
+			return Ok(std);
+		}
+		else
+		{
+			var existingStudent = await dbContext.Student.FindAsync(std.sId);
+			if(existingStudent == null)
+			{
+				return NotFound();
+			}
+			existingStudent.sId = std.sId;
+			existingStudent.sName = std.sName;
+			existingStudent.sStandard = std.sStandard;
+			dbContext.Students.Update(existingStudent);
+			await dbContext.SaveChangesAsync();
+			return Ok(existingStudent);
+		}
+	}
+
+}

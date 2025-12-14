@@ -1,0 +1,30 @@
+/****************************************************************************/
+using System;
+using System.Collections.Generic;
+class HelloWorld {
+  static void Main() {
+      int[] ar = {1,2,4,3,5,89,34,22};
+      int[] arr = {2,5,8,22,1,9,11};
+      List<int> res = FindCommonEle(ar,arr);
+      
+      foreach(int i in res)
+      {
+          Console.Write(i+" ");
+      }
+  }
+  
+  public static List<int> FindCommonEle(int[] ar,int[] arr)
+  {
+      HashSet<int> set1 = new HashSet<int>(ar);
+      List<int> res = new List<int>();
+      
+      foreach(int item in arr)
+      {
+          if(set1.Contains(item))
+          {
+              res.Add(item);
+          }
+      }
+      return res;
+  }
+}

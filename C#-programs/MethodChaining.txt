@@ -1,0 +1,38 @@
+ 
+//Method chaining in C#
+using System;
+public class HelloWorld
+{
+    public static void Main(string[] args)
+	{
+		Calculator ctr = new Calculator();
+		ctr.Add(8)
+		   .Mul(9)
+		   .Sub(2)
+		   .PrintRes();
+	}
+}
+public class Calculator
+{
+    int result = 0;
+    public Calculator Add(int x)
+    {
+        result += x;
+        return this;
+    }
+    
+    public Calculator Sub(int x)
+    {
+        result -= x;
+        return this;
+    }
+    public Calculator Mul(int x)
+    {
+        result *= x;
+        return this;
+    }
+    public void PrintRes()
+    {
+        Console.WriteLine("Result is: "+result);
+    }
+}
