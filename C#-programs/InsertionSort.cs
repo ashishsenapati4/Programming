@@ -30,3 +30,35 @@ class HelloWorld
     }
     
 }
+
+using System;
+class HelloWorld {
+  static void Main() {
+      int[] arr = {18,9,1,3,2,4,6,12,34};
+      int[] ar = InsertionSort(arr);
+      foreach(int i in ar)
+      {
+          Console.Write(i+" ");
+      }
+  }
+  public static int[] InsertionSort(int[] arr)
+  {
+      int n = arr.Length;
+      for(int i=1;i<n;i++)
+      {
+          int count = i;
+          while(count > 0)
+          {
+              if(arr[count] < arr[count-1])
+              {
+                  //swap
+                  int temp = arr[count];
+                  arr[count] = arr[count-1];
+                  arr[count-1] = temp;
+              }
+              count--;
+          }
+      }
+      return arr;
+  }
+}

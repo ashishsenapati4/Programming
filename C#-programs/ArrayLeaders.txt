@@ -1,0 +1,47 @@
+Array Leaders(Brute Force & Optimized)
+.....................................
+class ArrayLeaders {
+    public List<int> leaders(int[] arr) {
+        // code here
+     for(int i=arr.Length-1;i>0;i--)
+	 {
+		for(int j = i-1;j>=0;j--)
+		{
+			if(arr[j] < arr[i])
+			{
+				arr[j] = Int32.MinValue;
+			}
+		}
+	 }
+	 
+	 List<int> fry = new List<int>();
+     foreach(int i in arr)
+     {
+         fry.Add(i);
+     }
+	 
+	  fry.RemoveAll(x => x == Int32.MinValue);
+	  return fry;
+    }
+}
+
+
+class Solution {
+    public List<int> leaders(int[] arr) {
+        // code here
+        List<int> res = new List<int>();
+        int maxRight = arr[arr.Length-1];
+        res.Add(maxRight);
+        
+        for(int i=arr.Length-2;i>=0;i--)
+        {
+            if(arr[i] >= maxRight)
+            {
+                maxRight = arr[i];
+                res.Add(maxRight);
+            }
+        }
+        res.Reverse();
+        return res;
+    }
+}

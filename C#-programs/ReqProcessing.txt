@@ -1,0 +1,5 @@
+The Request Processing pipeline
+...............................
+Client --> Kestrel --> Middleware Pipeline(UseExceptionHandler() -> UseHttpsRedirection() -> UseStaticFiles() -> UseRouting() -> UseAuthentication()
+-> UseAuthorization() -> UseEndPoint()/MapControllerRoute()) --> MVC( ModelBinding -> ModelValidation -> ActionFilters -> ActionMethodExecution -> 
+   ActionResultExecution(ViewResult/JsonResult/Ok,NotFound etc)) --> Response --> Middleware(in-reverse) --> Client

@@ -1,0 +1,94 @@
+//find the middle element in a linked list
+
+1.Using tortoise & hare
+.......................
+using System;
+class HelloWorld {
+  static void Main() {
+      Node head = new Node(5);
+      head.next = new Node(10);
+      head.next.next = new Node(15);
+      head.next.next.next = new Node(20);
+      head.next.next.next.next = new Node(25);
+      head.next.next.next.next.next = new Node(35);
+      
+      Console.WriteLine(head.data+" "+head.next.data+" "+head.next.next.data);
+      
+      int k = FindMidEle(head);
+      Console.WriteLine("Mid is: "+k);
+  }
+  public static int FindMidEle(Node head)
+  {
+    Node slowPtr = head;
+    Node fastPtr = head;
+    
+    Console.WriteLine(slowPtr.data);
+    
+    while(fastPtr!=null && fastPtr.next!=null)
+    {
+        slowPtr = slowPtr.next;
+        fastPtr = fastPtr.next.next;
+    }
+    return slowPtr.data;
+  }
+}
+
+public class Node
+{
+    public int data;
+    public Node next;
+    public Node(int _data)
+    {
+        data = _data;
+        next = null;
+    }
+}
+
+2. Naive approach
+..................
+using System;
+class HelloWorld {
+  static void Main() {
+      Node head = new Node(5);
+      head.next = new Node(10);
+      head.next.next = new Node(15);
+      head.next.next.next = new Node(20);
+      head.next.next.next.next = new Node(25);
+      head.next.next.next.next.next = new Node(35);
+      
+      int k = FindMidEle(head);
+      Console.WriteLine("Mid is: "+k);
+  }
+  public static int FindMidEle(Node head)
+  {
+      int count = 0;
+      
+      Node temp = head;
+      //find length
+      while(temp != null)
+      {
+          temp = temp.next;
+          count++;
+      }
+      
+      int midIndex = count/2;
+      while(midIndex-- > 0)
+      {
+          head = head.next;
+      }
+      return head.data;
+  }
+}
+
+
+
+public class Node
+{
+    public int data;
+    public Node next;
+    public Node(int _data)
+    {
+        data = _data;
+        next = null;
+    }
+}

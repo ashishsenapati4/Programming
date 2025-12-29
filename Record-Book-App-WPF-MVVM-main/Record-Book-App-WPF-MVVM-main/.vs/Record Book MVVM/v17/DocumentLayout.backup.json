@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|c:\\users\\ashis\\onedrive\\documents\\programming\\record-book-app-wpf-mvvm-main\\record-book-app-wpf-mvvm-main\\record book mvvm\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|solutionrelative:record book mvvm\\commands\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|c:\\users\\ashis\\onedrive\\documents\\programming\\record-book-app-wpf-mvvm-main\\record-book-app-wpf-mvvm-main\\record book mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|solutionrelative:record book mvvm\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|c:\\users\\ashis\\onedrive\\documents\\programming\\record-book-app-wpf-mvvm-main\\record-book-app-wpf-mvvm-main\\record book mvvm\\viewmodel\\adduserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|solutionrelative:record book mvvm\\viewmodel\\adduserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|c:\\users\\ashis\\onedrive\\documents\\programming\\record-book-app-wpf-mvvm-main\\record-book-app-wpf-mvvm-main\\record book mvvm\\views\\adduser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|solutionrelative:record book mvvm\\views\\adduser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|c:\\users\\ashis\\onedrive\\documents\\programming\\record-book-app-wpf-mvvm-main\\record-book-app-wpf-mvvm-main\\record book mvvm\\views\\adduser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|solutionrelative:record book mvvm\\views\\adduser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|c:\\users\\ashis\\onedrive\\documents\\programming\\record-book-app-wpf-mvvm-main\\record-book-app-wpf-mvvm-main\\record book mvvm\\views\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|solutionrelative:record book mvvm\\views\\main.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|c:\\users\\ashis\\onedrive\\documents\\programming\\record-book-app-wpf-mvvm-main\\record-book-app-wpf-mvvm-main\\record book mvvm\\views\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|solutionrelative:record book mvvm\\views\\main.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|c:\\users\\ashis\\onedrive\\documents\\programming\\record-book-app-wpf-mvvm-main\\record-book-app-wpf-mvvm-main\\record book mvvm\\models\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|solutionrelative:record book mvvm\\models\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|c:\\users\\ashis\\onedrive\\documents\\programming\\record-book-app-wpf-mvvm-main\\record-book-app-wpf-mvvm-main\\record book mvvm\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4DF82F0-42D1-4BAC-AC16-78171CA1D220}|Record Book MVVM\\Record Book MVVM.csproj|solutionrelative:record book mvvm\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 195,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\ViewModel\\AddUserViewModel.cs",
+              "RelativeDocumentMoniker": "Record Book MVVM\\ViewModel\\AddUserViewModel.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\ViewModel\\AddUserViewModel.cs",
+              "RelativeToolTip": "Record Book MVVM\\ViewModel\\AddUserViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:08:20.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Record Book MVVM\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "Record Book MVVM\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:08:20.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Commands\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Record Book MVVM\\Commands\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Commands\\RelayCommand.cs",
+              "RelativeToolTip": "Record Book MVVM\\Commands\\RelayCommand.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAApwA8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:08:20.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserManager.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Models\\UserManager.cs",
+              "RelativeDocumentMoniker": "Record Book MVVM\\Models\\UserManager.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Models\\UserManager.cs",
+              "RelativeToolTip": "Record Book MVVM\\Models\\UserManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:08:20.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Record Book MVVM\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Models\\User.cs",
+              "RelativeToolTip": "Record Book MVVM\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:08:20.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddUser.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Views\\AddUser.xaml.cs",
+              "RelativeDocumentMoniker": "Record Book MVVM\\Views\\AddUser.xaml.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Views\\AddUser.xaml.cs",
+              "RelativeToolTip": "Record Book MVVM\\Views\\AddUser.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:08:20.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Main.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Views\\Main.xaml.cs",
+              "RelativeDocumentMoniker": "Record Book MVVM\\Views\\Main.xaml.cs",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Views\\Main.xaml.cs",
+              "RelativeToolTip": "Record Book MVVM\\Views\\Main.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAApwBsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:08:20.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddUser.xaml",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Views\\AddUser.xaml",
+              "RelativeDocumentMoniker": "Record Book MVVM\\Views\\AddUser.xaml",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Views\\AddUser.xaml",
+              "RelativeToolTip": "Record Book MVVM\\Views\\AddUser.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-03T04:08:20.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Main.xaml",
+              "DocumentMoniker": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Views\\Main.xaml",
+              "RelativeDocumentMoniker": "Record Book MVVM\\Views\\Main.xaml",
+              "ToolTip": "C:\\Users\\ashis\\OneDrive\\Documents\\Programming\\Record-Book-App-WPF-MVVM-main\\Record-Book-App-WPF-MVVM-main\\Record Book MVVM\\Views\\Main.xaml",
+              "RelativeToolTip": "Record Book MVVM\\Views\\Main.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-03T04:08:20.549Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

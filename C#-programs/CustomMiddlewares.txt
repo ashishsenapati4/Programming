@@ -1,0 +1,106 @@
+Minimal Api
+...........
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+app.MapGet("/hello",() => "Hello World.");
+app.Run();
+
+minimal apis are a lightweight way to build small HTTP apis without controllers or attributes. Perfect for microservices.
+
+Creating Custom Middleware
+..........................
+Create a request logging middleware that logs the request path
+
+public class RequestLoggingMiddleware
+{
+	private readonly RequestDelegate _next;
+	
+	public RequestLoggingMiddleware(RequestDelegate next)
+	{
+		_next = next;
+	}
+	
+	public async Task Invoke(HttpContext context)
+	{
+		Console.WriteLine($"Request for: {context.Request.Path}");
+		await _next(context);
+	}
+}
+
+register
+........
+app.UseMiddleware<RequestLoggingMiddleware>();
+
+create a custom middleware that will log the request path
+public class MyCustomMiddleware
+{
+	private readonly RequestDelegate next;
+	
+	public MyCustomMiddleware(RequestDelegate _next)
+	{
+		next = _next;
+	}
+	
+	//use the Invoke method...
+	public async Task Invoke(HttpContext context)
+	{
+		Console.WriteLine($"Request for : {context.Request.Path}"};
+		await next(context);
+	}
+}
+
+program.cs
+..........
+Register middleware after app has been built
+app.UseMiddleware<MyCustomMiddleware>();
+
+
+//creating a custom middleware to read the response..
+......................................................
+namespace TestMVC.Middlewares
+{
+    public class ResponseLoggingMiddleware
+    {
+        private readonly RequestDelegate _next;
+
+        public ResponseLoggingMiddleware(RequestDelegate next)
+        {
+            this._next = next;
+        }
+
+        public async Task InvokeAsync(HttpContext context)
+        {
+            //Task:- Middleware for logging the response
+
+            //1. store the original response body pointer in a variable originalRespBody
+            var originalResponseBody = context.Response.Body;
+
+             try
+             {
+                //2. create a new memorystream and point the responsebody to use that memorystream to write all the response
+                using MemoryStream tempStream = new MemoryStream();
+                context.Response.Body = tempStream;
+
+                //3. call the next middleware. This will actually fill up the context.Response.Body/new memorystream.
+                await _next(context);
+
+                //4. set the position of the memorystream to 0 for reading.
+                context.Response.Body.Seek(0, SeekOrigin.Begin);
+
+                //5. read the buffer from 0 to end and log the response
+                string response = await new StreamReader(context.Response.Body).ReadToEndAsync();
+                Console.WriteLine($"Response: " + response);
+
+                //6. set the position of the stream to 0 again and copy the content to the originalRespBody. This will be sent to user.
+                context.Response.Body.Seek(0, SeekOrigin.Begin);
+                await context.Response.Body.CopyToAsync(originalResponseBody);
+             }
+            finally
+            {
+                //7. finally set the stream to point to the original stream.
+                context.Response.Body = originalResponseBody;
+            }
+
+        }
+    }
+}

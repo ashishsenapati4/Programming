@@ -1,0 +1,33 @@
+class Solution {
+    public string getLongestPal(string s) {
+        // code here
+        int start = 0;
+        int n = s.Length;
+        int maxLen = 1;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i;j<n;j++)
+            {
+                if(CheckPal(s,i,j) && (j-i+1) > maxLen)
+                {
+                    start = i;
+                    maxLen = j-i+1;
+                }
+            }
+        }
+        return s.Substring(start,maxLen);
+        
+    }
+    
+    public static bool CheckPal(string str,int low,int high)
+    {
+        while(low < high)
+        {
+            if(str[low++] != str[high--])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+};
